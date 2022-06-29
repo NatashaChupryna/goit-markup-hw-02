@@ -1,34 +1,29 @@
-:root body {
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   color: #212121;
   background-color: #ffffff;
-  width: 1600;
+  width: 1600px;
 }
 
 /* main styles */
 .list-item {
   list-style: none;
 }
-.contact-link .link {
+.contact-link,
+.link {
   text-decoration: none;
 }
 h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 /* header */
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -43,6 +38,11 @@ h2 {
 .logo-second-word {
   color: #000000;
 }
+.link {
+  color: #212121;
+}
+.header-link {color: var(--secondary-text-color);}
+
 
 /* Section hero */
 h1 {
@@ -61,7 +61,7 @@ h1 {
 
 /* Список преимуществ */
 .features-title {
-  color: #212121;
+  color: var(--main-text-color);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -70,7 +70,7 @@ h1 {
   text-transform: uppercase;
 }
 .features-text {
-  color: #757575;
+  color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -78,12 +78,21 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-
 /* наша команда */
-.workers-name {font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;}
+.workers-name {
+  color: var (--main-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+.worker-position {
+  color: var(--secondary-text-color);
+}
+ 
+/* footer */
+.footer {background-color: #2F303A;}
+.logo-third-word {color: #FFFFFF;}
+.adress {color: #FFFFFF; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);} 
+.footer-link {color: rgba(255, 255, 255, 0.6);}
