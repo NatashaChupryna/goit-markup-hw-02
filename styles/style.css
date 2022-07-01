@@ -5,7 +5,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
   width: 1600px;
 }
 
@@ -31,6 +30,7 @@ body {
 .logo-first-word {
   color: #2196f3;
 }
+
 .logo-second-word {
   color: #000000;
 }
@@ -179,7 +179,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.adress:hover, .adress:focus {color: #2196F3;}
+.adress:hover,
+.adress:focus {
+  color: #2196f3;
+}
 
 /* Портфолио */
 
@@ -200,15 +203,18 @@ body {
   color: #ffffff;
 }
 
-.portfolio-title
-{color: var(--main-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;}
+.portfolio-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 
-    .portfolio-category{color: var(--secondary-text-color);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.03em;}
+.portfolio-category {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
